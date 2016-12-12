@@ -22,7 +22,7 @@ tomcat-9M
 CFLAGS="$RPM_OPT_FLAGS" ./configure.sh --prefix=%{_prefix} --mandir=%{_mandir} --sysconfdir=/etc
 
 %install
-install -m 0755 -d $RPM_BUILD_ROOT/usr/local//%{name}-%{version}
+install -m 0755 -d $RPM_BUILD_ROOT/usr/local/%{name}-%{version}
 cp -a . $RPM_BUILD_ROOT/usr/local/%{name}-%{version}/
 
 %clean
